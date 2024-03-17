@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+  font-family: "Cambay", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: url('2.png');
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  }
+
+.container {
+    max-width: 400px;
+    margin: 200px auto;
+    background-color:  #4e525a49;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+  }
+  h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #181818;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #313131;
+  }
+  
+  .or{
+    text-align: center;
+  }
+  
+  p{
+    text-align: center;
+    color: white;
+  }
+  /* Responsive adjustments */
+  @media screen and (max-width: 480px) {
+    .container {
+      max-width: 80%;
+    }
+    .submit-btn{
+      min-width: 80%;
+    }
+    body{
+      background-image: url(1.png);
+    }
+  }
